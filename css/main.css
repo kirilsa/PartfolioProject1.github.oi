@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --primry-color: #E2C296;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  padding: 0;
+  margin: 0;
+  font-family: "Bebas Neue";
+}
+
+.navbar {
+  padding: 1ez;
+  display: flex;
+  place-content: space-between;
+}
+.navbar .logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+.navbar nav {
+  display: none;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+.navbar .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.hero {
+  position: static;
+  height: 100%;
+}
+.hero .container {
+  background-image: url("images/1-Background.png");
+  background-position: center;
+  background-size: cover;
+  padding: 1em 2em;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  width: auto;
+}
+.hero .entryTo {
+  padding: 5em 2em 1em 2em;
+}
+.hero .main {
+  margin-top: 2em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 4em;
+  line-height: 1.3em;
+}
+.hero .subhead {
+  padding-top: 8em;
+  font-size: 2em;
+  font-weight: 100;
+  bottom: 2em;
+  text-align: center;
+}
+@media only screen and (max-width: 443px) {
+  .hero .subhead {
+    padding-top: 8em;
+  }
+}
+
+.first {
+  height: 100%;
+}
+.first .container {
+  display: flex;
+  align-items: center;
+}
+.first .left-col {
+  margin: 1em 0 1em 1em;
+  justify-content: center;
+  text-align: left;
+  width: 50%;
+}
+.first .left-col .head {
+  margin-left: 2em;
+  font-weight: 400;
+  font-size: 4em;
+  line-height: 1.3em;
+  color: #E2C296;
+}
+.first .left-col .description {
+  margin: 0 1em 3em 4em;
+  color: #FFFFFF;
+  font-family: Futura;
+  font-weight: 500;
+}
+.first .horsesFace {
+  width: 100%;
+  height: 100%;
+  width: auto;
+  flex: 1;
+  text-align: right;
+}
+
+.video1 {
+  text-align: center;
+}
+.video1 .container {
+  height: 864px;
+}
+.video1 iframe {
+  max-width: 1920px;
+  width: 80%;
+  height: 80%;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .subhead {
+    margin-top: 5em;
+  }
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+    list-style: none;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.go-premium-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.go-premium-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=main.css.map */
